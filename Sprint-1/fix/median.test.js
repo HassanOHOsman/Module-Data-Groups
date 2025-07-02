@@ -22,7 +22,7 @@ describe("calculateMedian", () => {
     { input: [4, 2, 1, 3], expected: 3 },
     { input: [6, 1, 5, 3, 2, 4], expected: 4 },
   ].forEach(({ input, expected }) =>
-    it(`returns the correct median for unsorted array [${input}]`, () => expect(calculateMedian(input.sort())).toEqual(expected))
+    it(`returns the correct median for unsorted array [${input}]`, () => expect(calculateMedian(input)).toEqual(expected))
   );
 
   it("doesn't modify the input array [1, 2, 3]", () => {
