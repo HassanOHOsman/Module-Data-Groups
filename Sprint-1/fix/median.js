@@ -6,7 +6,7 @@
 // or 'list' has mixed values (the function is expected to sort only numbers).
 
 function calculateMedian(list) {
-  if (!Array.isArray(list)) {
+  if (!Array.isArray(list) || list.length === 0) {
     return null;
   }
   for (const item of list) {
